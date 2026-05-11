@@ -52,3 +52,7 @@ This project is built using the open-source [Apio](https://github.com/FPGAwars/a
 ## Usage
 
 Once flashed, connect your USB-to-Serial adapter and your HP-IL hardware. Launch `pyILper` on your PC, point it to the COM port of your serial adapter, set the baud rate to **230400**, and pyILper will automatically initialize the PILbox and start communicating with the loop!
+
+## License
+
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
