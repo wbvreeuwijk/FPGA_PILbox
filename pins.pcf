@@ -1,0 +1,23 @@
+# TinyFPGA BX Pin Configuration for PILbox
+
+# Internal 16MHz clock
+set_io clk_16mhz B2
+
+# Onboard LED
+set_io led B3
+
+# UART to USB-Serial Adapter
+# Pin 1 (A2) -> TX of USB-Serial (RX into FPGA)
+set_io uart_rx A2
+# Pin 2 (A1) -> RX of USB-Serial (TX out of FPGA)
+set_io uart_tx A1
+
+# HP-IL Physical Interface (Using same pins as HP82163B emulator)
+# Pin 3 (B1) -> Positive pulse receiver
+set_io hpil_rx_p B1
+# Pin 4 (C2) -> Negative pulse receiver
+set_io hpil_rx_n C2
+# Pin 5 (C1) -> Positive pulse transmitter
+set_io hpil_tx_p C1
+# Pin 6 (D2) -> Negative pulse transmitter
+set_io hpil_tx_n D2
